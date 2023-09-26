@@ -15,8 +15,8 @@ public class LaptopController {
 	private ILaptopRepository repo;
 	
 	@GetMapping("/listar")
-	public String listadoProducto(Model model) {
-		model.addAttribute("lstProductos", repo.findAll());
+	public String listadoLaptop(Model model) {
+		model.addAttribute("lstLaptop", repo.findAll());
 		return "listado";
 	}
 	
